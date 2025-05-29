@@ -7,8 +7,6 @@ import { cn } from "#/lib/utils";
 import { env } from "#/config/environment";
 import { useContactForm } from "#/hooks/use-contact-form";
 
-import { sendContactAction } from "#/actions";
-
 import { FormGroup } from "#/components/ui/form-group";
 import { Label } from "#/components/ui/label";
 import { Input } from "#/components/ui/input";

@@ -47,7 +47,7 @@ export async function sendContactAction(
   if (!data.success || data.score < 0.5 || data.action !== "submit_form") {
     return {
       success: false,
-      message: "reCAPTCHA verification failed. Please try again.",
+      message: "Google reCAPTCHA verification failed. Please try again.",
     };
   }
 
