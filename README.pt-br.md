@@ -9,7 +9,7 @@ Este repositório contém um exemplo prático de como integrar o Google reCAPTCH
 
 ## ✨ Tecnologias utilizadas
 
-- [Next.js 14+ (App Router)](https://nextjs.org/docs/app)
+- [Next.js 15+ (App Router)](https://nextjs.org/docs/app)
 - [Google reCAPTCHA v3](https://developers.google.com/recaptcha/docs/v3)
 - [TypeScript](https://www.typescriptlang.org/)
 
@@ -42,3 +42,18 @@ GOOGLE_RECAPTCHA_SECRET_KEY=your_secret_key
 
 > ⚠️ **Importante:** a validação do reCAPTCHA pode não funcionar corretamente em localhost.
 > Para funcionar de forma confiável, publique o projeto em um domínio público (como no Vercel ou Netlify) e registre esse domínio nas configurações do reCAPTCHA.
+
+## ✉️ Integração com serviço de e-mail
+
+No arquivo [`src/actions/send-contact-action.ts`](./src/actions/send-contact-action.ts), há um ponto no código onde o envio de e-mail deve ser implementado após a validação do reCAPTCHA. Esse local está indicado com o seguinte comentário:
+
+```ts
+// ✅ Replace this part with sending email with the service of your choice (e.g. Resend, SendGrid)
+```
+
+Substitua esse trecho com a integração do seu serviço de envio de e-mails preferido, como por exemplo:
+
+- [SendGrid](https://www.twilio.com/docs/sendgrid/for-developers/sending-email/quickstart-nodejs)
+- [Resend](https://resend.com/docs/introduction)
+
+> Não se esqueça de adicionar a chave de API do seu provedor de serviços de e-mail preferido no arquivo .env.local

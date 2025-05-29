@@ -43,3 +43,18 @@ GOOGLE_RECAPTCHA_SECRET_KEY=your_secret_key
 
 > ⚠️ **Important:** reCAPTCHA validation may not work properly on localhost.
 > For accurate validation, deploy your project to a public domain like Vercel or Netlify and register that domain in reCAPTCHA settings.
+
+## ✉️ Email Service Integration
+
+In the [`src/actions/send-contact-action.ts`](./src/actions/send-contact-action.ts) file, there's a section where the email sending logic should be added after reCAPTCHA validation. This section is marked with the following comment:
+
+```ts
+// ✅ Replace this part with sending email with the service of your choice (e.g. Resend, SendGrid)
+```
+
+Replace that line with the integration code for your preferred email service provider, such as:
+
+- [SendGrid](https://www.twilio.com/docs/sendgrid/for-developers/sending-email/quickstart-nodejs)
+- [Resend](https://resend.com/docs/introduction)
+
+> Don't forget to add your preferred email service provider API key in the .env.local file.

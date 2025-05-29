@@ -51,7 +51,7 @@ export async function sendContactAction(
     };
   }
 
-  // send data
+  // ✅ Replace this part with sending email with the service of your choice (e.g. Resend, SendGrid)
 
   return {
     success: true,
