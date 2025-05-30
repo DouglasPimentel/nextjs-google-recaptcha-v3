@@ -5,7 +5,7 @@ This repository provides a practical example of how to integrate Google reCAPTCH
 ## 📘 Available languages:
 
 - [English 🇺🇸](./README.md)
-- [Português Brasileiro 🇧🇷](./README.pt-br.md)
+- [Brazilian Portuguese 🇧🇷](./README.pt-br.md)
 
 ## ✨ Technologies used
 
